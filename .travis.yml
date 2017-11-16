@@ -3,4 +3,4 @@ rvm:
  - 2.4.2
 before_install: sudo apt-get -y install default-jdk
 install: bundle install
-script: bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url="https://emea-saleshub.blackducksoftware.com" --blackduck.hub.username=pa-scannuser --blackduck.hub.password=57z-Jwg-34P-8HC --blackduck.hub.auto.import.cert=true --detect.policy.check=true --detect.project.name=travis-test-PA --detect.default.project.version.text=$TRAVIS_BUILD_NUMBER
+script: bash <(curl -s https://blackducksoftware.github.io/hub-detect/hub-detect.sh) --blackduck.hub.url="https://emea-saleshub.blackducksoftware.com" --blackduck.hub.username=pa-scannuser --blackduck.hub.password=57z-Jwg-34P-8HC --blackduck.hub.trust.cert=true --detect.policy.check=true --detect.project.name=travis-test-PA --detect.default.project.version.text=$TRAVIS_BUILD_NUMBER
